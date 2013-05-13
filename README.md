@@ -1,4 +1,4 @@
-![MoreSettings](http://i.imgur.com/OE0cnkG.png)
+![MoreSettings](http://i.imgur.com/OxXao7H.png)
 =========
 
 MoreSettings is a simple plugin by skipperguy12 that adds settings to the game such as toggleable blood and toggleable deathmessages.
