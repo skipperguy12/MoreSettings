@@ -40,7 +40,7 @@ public class CustomPlayerEntityDamageByEntityEvent extends Event {
 
 		if ((((EntityDamageByEntityEvent) getParent()).getDamager().getType() == EntityType.ARROW)) {
 			player.playEffect(getParent().getEntity().getLocation(), Effect.STEP_SOUND, 10);
-	
+
 		}
 
 		if ((((EntityDamageByEntityEvent) getParent()).getDamager() instanceof Player)) {
@@ -49,56 +49,8 @@ public class CustomPlayerEntityDamageByEntityEvent extends Event {
 
 			p.playSound(p.getLocation(), Sound.HURT_FLESH, 200.0F, 200.0F);
 			player.playEffect(getParent().getEntity().getLocation(), Effect.STEP_SOUND, 10);
-			
 
 		}
-	}
-
-	private int getBloodType(EntityType type) {
-		switch (type) {
-		case FIREBALL:
-		case GHAST:
-		case PIG_ZOMBIE:
-		case PLAYER:
-		case PRIMED_TNT:
-		case SHEEP:
-		case SILVERFISH:
-		case SKELETON:
-		case SQUID:
-		case WITHER_SKULL:
-			return 10;
-		case LIGHTNING:
-			return 49;
-		case FALLING_BLOCK:
-			return 133;
-		case MUSHROOM_COW:
-			return 41;
-		case IRON_GOLEM:
-			return 42;
-		case SNOWBALL:
-			return 99;
-		case FIREWORK:
-		case FISHING_HOOK:
-		case GIANT:
-		case ITEM_FRAME:
-		case MAGMA_CUBE:
-		case MINECART:
-		case OCELOT:
-		case PAINTING:
-		case PIG:
-		case SLIME:
-		case SMALL_FIREBALL:
-		case SNOWMAN:
-		case SPIDER:
-		case SPLASH_POTION:
-		case THROWN_EXP_BOTTLE:
-		case UNKNOWN:
-		case VILLAGER:
-		case WEATHER:
-		case WITCH:
-		case WITHER:
-		}
-		return 55;
 	}
 
 	public CustomPlayer getVictim() {
